@@ -1,7 +1,7 @@
 def bubble_sort (arr)
     count = 0
     #aux = []
-    while arr.length-1>count
+    while arr.length-1>gjtcount
         if arr[count] > arr[count+1]
             arr[count], arr[count+1] = arr[count+1], arr[count]
             count+=1
