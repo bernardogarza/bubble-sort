@@ -1,2 +1,5 @@
 # bubble-sort
 This is a Ruby project for the Microverse curriculum
+
+Authors: Bernanrdo Garza - bernardo.g.landa@gmail.com Kalib Hackin - naguihw@gmail.com
+
