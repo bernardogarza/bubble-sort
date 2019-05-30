@@ -11,13 +11,21 @@ def bubble_sort (arr)
     arr
 end
 arr=[1, 10, 3, 25, 2]
-# print bubble_sort(arr)
-
+print bubble_sort(arr)
+#-----------------------------------------------------------------------
 def bubble_sort_by (arr)
-    abc = yield(arr)
-    puts abc
+    count = 0
+    while arr.length-1>count
+        if yield(arr[count], arr[count+1]) > 0
+            arr[count], arr[count+1] = arr[count+1], arr[count]
+            count = 0
+        else
+            count+=1
+        end
+    end
+    arr
 end
 
-arr2 = ["hi","hello","hey"]
+arr2 = ["333","1","666666", "4444" , "asd", "dsa"]
 
-bubble_sort_by(arr2) { |left, right| left.length - right.length }
+print bubble_sort_by(arr2) { |left, right| left.length - right.length }
